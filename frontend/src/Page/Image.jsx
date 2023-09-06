@@ -1,18 +1,33 @@
-import { useState } from "react";
 import "./Image.css";
+import LoadingSpinner from "../component/Spinner";
+
+import { useState } from "react";
 import axios from "axios";
+
 
 const Image = () => {
     const [imageSrc,setImageSrc] = useState(null);
     const [imgName,setImgName] = useState('')
+    const [isLoading, setIsLoading] = useState(false);
 
-    const check = async ()=>{
-        const formData = new FormData();
-        formData.append('imageFile', imageSrc);
+    const requestConfig = {
+    timeout: 60000, 
+    };
 
-        const response = await axios.post("http://127.0.0.1:5002/get-image",formData)
-        
-        setImgName(response.data.prediction)
+    const check = async () =>{
+        try{  
+            setIsLoading(true)
+            const formData = new FormData();
+            formData.append('imageFile', imageSrc);
+    
+            const response = await axios.post("http://127.0.0.1:5002/get-image",formData,requestConfig)
+            
+            setIsLoading(false)
+            setImgName(response.data.prediction)
+        }catch(error){
+            setIsLoading(false)
+            console.log(error);
+        }
     }
 
 
@@ -40,7 +55,8 @@ const Image = () => {
                 </div>
             </div>
             <div className="prediction">
-                <h3>Prediction is : {imgName}</h3>
+                {isLoading ? <LoadingSpinner />: 
+                    imgName && <h3>Prediction is : {imgName}</h3> }
             </div>
         </div>
     )
