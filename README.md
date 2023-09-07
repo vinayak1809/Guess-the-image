@@ -35,20 +35,19 @@
 
 ### Client-side (Frontend)
 
-1. Navigate to the "frontend" directory:
-
    ```bash
    $ cd frontend
    $ npm install
    $ npm start
-  
-2. Server-side (Backend)
+  ```
+
+## Server-side (Backend)
 
    ```bash
    $ cd backend
    $ pip install -r requirements.txt
    $ python3 application.py
-   
+   ``` 
 
 ## Tools
 
