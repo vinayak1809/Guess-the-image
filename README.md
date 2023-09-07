@@ -5,28 +5,58 @@
   categories and provides results to the user. Users can explore the world of image classification and gain insights into the underlying
   machine learning techniques.
 
-### Key Features:
+## Key Features:
 
   * User-friendly interface for image uploads.  
   * Server-side image processing using TensorFlow.
   * Pre-trained model for image classification.
   * Easily extendable for custom models and categories.
-  * A great educational tool for learning about image classification.
 
-### Tech Stack:
+## Tech Stack:
 
   * Frontend: React and axios
   * Backend: Python and Flask Framework
   * Libraries: numpy, matplotlib, opencv-python, tensorflow
+    
+## Dependencies
+
+- **Operating System:** Windows / Linux / macOS
+- **Recommended RAM:** 8GB or higher
+
+### Software Dependencies
+
+- React.js (for the frontend)
+- Python 3 (for the backend)
+- npm (Node Package Manager)
+- pip (Python package manager)
 
 
-### Tools
+## Setup
+
+### Client-side (Frontend)
+
+1. Navigate to the "frontend" directory:
+
+   ```bash
+   $ cd frontend
+   $ npm install
+   $ npm start
+  
+2. Server-side (Backend)
+
+   ```bash
+   $ cd backend
+   $ pip install -r requirements.txt
+   $ python3 application.py
+   
+
+## Tools
 
   * Visual Studio Code
   * Postman
   * Git
 
-### Resources
+## Acknowledgments
 
   * [Youtube][youtube]
   * [React][react]
