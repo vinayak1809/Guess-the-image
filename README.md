@@ -23,7 +23,7 @@
 - **Operating System:** Windows / Linux / macOS
 - **Recommended RAM:** 8GB or higher
 
-### Software Dependencies
+## Software Dependencies
 
 - React.js (for the frontend)
 - Python 3 (for the backend)
@@ -41,7 +41,7 @@
    $ npm start
   ```
 
-## Server-side (Backend)
+### Server-side (Backend)
 
    ```bash
    $ cd backend
