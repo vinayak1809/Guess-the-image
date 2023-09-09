@@ -5,14 +5,14 @@
   categories and provides results to the user. Users can explore the world of image classification and gain insights into the underlying
   machine learning techniques.
 
-## Key Features:
+## Key Features
 
   * User-friendly interface for image uploads.  
   * Server-side image processing using TensorFlow.
   * Pre-trained model for image classification.
   * Easily extendable for custom models and categories.
 
-## Tech Stack:
+## Tech Stack
 
   * Frontend: React and axios
   * Backend: Python and Flask Framework
