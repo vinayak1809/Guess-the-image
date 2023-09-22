@@ -12,6 +12,13 @@
   * Pre-trained model for image classification.
   * Easily extendable for custom models and categories.
 
+## Note
+
+  * Dataset Trained on [CIFAR-10 dataset][dataset]
+  * Trained on 8000 images
+  * Tested on 4000 images
+  * Accuracy : 68%
+  
 ## Tech Stack
 
   * Frontend: React and axios
@@ -61,7 +68,7 @@
   * [React][react]
   * [Flask][flask]
 
-
+[dataset]:https://www.cs.toronto.edu/~kriz/cifar.html
 [youtube]:https://www.youtube.com/watch?v=t0EzVCvQjGE&t=1s
 [react]:https://legacy.reactjs.org/docs/getting-started.html
 [flask]:https://www.tutorialspoint.com/flask/index.htm
