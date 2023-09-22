@@ -44,7 +44,7 @@ const Image = () => {
 
     return (
         <div className="hello">
-            <div className="img">{imageSrc ? <img srcSet={URL.createObjectURL(imageSrc)} sizes="(max-width:600px) 480px,800px" alt="Image" />: <>not found</> }</div>
+            <div className="img">{imageSrc ? <img srcSet={URL.createObjectURL(imageSrc)} alt="Image" />: <>not found</> }</div>
             <div className="upload-check">
                 <div className="upload-btn-wrapper">
                     <button class="btn">Upload a file</button>
