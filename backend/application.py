@@ -22,9 +22,7 @@ def hello():
 def getImage():
     if request.method == "POST":
         file = request.files['imageFile']
-        print(file, "file")
         imageName = main.compress(file)
-        print("in route")
 
         return jsonify({'prediction': imageName})
 
