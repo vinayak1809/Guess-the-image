@@ -16,12 +16,12 @@ def checkImage(image):
     class_names = ['Plane', 'Car', 'Bird', 'Cat',
                    'Deer', 'Dog', 'Frog', 'Horse', 'Ship', 'Truck']
 
-    for i in range(16):
-        plt.subplot(4, 4, i+1)
-        plt.xticks([])
-        plt.yticks([])
-        plt.imshow(training_images[i], cmap=plt.cm.binary)
-        plt.xlabel(class_names[training_labels[i][0]])
+    #for i in range(16):
+    #    plt.subplot(4, 4, i+1)
+    #    plt.xticks([])
+    #    plt.yticks([])
+    #    plt.imshow(training_images[i], cmap=plt.cm.binary)
+    #    plt.xlabel(class_names[training_labels[i][0]])
 
     training_images = training_images[:8000]
     training_labels = training_labels[:8000]
